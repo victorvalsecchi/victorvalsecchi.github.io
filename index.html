@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecionamento Seguro</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
+        .container { max-width: 400px; margin: 0 auto; }
+        input { padding: 10px; width: 100%; margin: 10px 0; }
+        button { padding: 10px 20px; background: #0366d6; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Acesso Protegido</h2>
+        <p>Digite a senha para acessar o conteúdo no Notion:</p>
+        <input type="password" id="passwordInput" placeholder="Digite a senha">
+        <button onclick="checkPassword()">Acessar</button>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            const correctPassword = 'suaSenhaAqui'; // Defina sua senha
+            
+            if (password === correctPassword) {
+                window.location.href = 'https://www.notion.so/1ed779dbbbc780e59b8be8344b0d923e?v=1ed779dbbbc78071ac0d000c83723852&pvs=4'; // Link do Notion
+            } else {
+                alert('Senha incorreta. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>
